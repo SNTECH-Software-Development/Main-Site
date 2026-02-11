@@ -1,90 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Startup Name</title>
-  <meta name="description" content="Building something useful. Coming soon." />
+  <title>SNTECH</title>
+  <meta name="description" content="SNTECH is an ed-tech startup building learning tools and roadmaps." />
   <style>
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: #0b0f19;
-      color: #e6e8ef;
-      display: grid;
-      place-items: center;
-      min-height: 100vh;
-      padding: 24px;
+      font-family: Arial, sans-serif;
+      margin: 24px;
+      line-height: 1.6;
+      max-width: 900px;
     }
-    .card {
-      max-width: 720px;
-      width: 100%;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px;
-      padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    h1 { margin-bottom: 6px; }
+    .muted { color: #555; }
+    details {
+      margin-top: 14px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
     }
-    h1 { margin: 0 0 10px; font-size: 2rem; }
-    p { margin: 0 0 18px; line-height: 1.6; color: rgba(230,232,239,0.9); }
-    .row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
-    a.btn {
-      text-decoration: none;
-      color: #0b0f19;
-      background: #7c5cff;
-      padding: 10px 14px;
-      border-radius: 10px;
-      font-weight: 600;
-      display: inline-block;
+    summary {
+      cursor: pointer;
+      font-weight: bold;
     }
-    a.btn.secondary {
-      background: transparent;
-      color: #e6e8ef;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .tag {
-      display: inline-block;
-      font-size: 0.85rem;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.16);
-      color: rgba(230,232,239,0.85);
-      margin-bottom: 14px;
-    }
-    footer { margin-top: 18px; font-size: 0.85rem; color: rgba(230,232,239,0.65); }
-    input {
-      width: 100%;
-      max-width: 360px;
-      padding: 10px 12px;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.2);
-      background: rgba(255,255,255,0.06);
-      color: #e6e8ef;
-      outline: none;
+    ul { margin: 10px 0 0 18px; }
+    a { color: #0b57d0; }
+    footer {
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <main class="card">
-    <div class="tag">🚀 Startup • Coming Soon</div>
-    <h1>Your Startup Name</h1>
+  <header>
+    <h1>SNTECH</h1>
+    <p class="muted">Ed-tech startup</p>
+  </header>
+
+  <main>
     <p>
-      We’re building <strong>[what you’re building]</strong> to help <strong>[who it helps]</strong>
-      do <strong>[the main benefit]</strong>.
+      SNTECH is building learning tools to help people improve their skills.
     </p>
 
-    <p><strong>Launching soon.</strong> Want updates?</p>
+    <p><strong>Who it’s for:</strong> Everyone.</p>
 
-    <div class="row">
-      <input type="email" placeholder="your@email.com" aria-label="Email address" />
-      <a class="btn" href="#" onclick="alert('Replace this with your signup link!')">Notify me</a>
-      <a class="btn secondary" href="mailto:you@yourstartup.com">Contact</a>
-    </div>
+    <p><strong>Status:</strong> We’re still working on it — more features and tools are coming soon.</p>
 
-    <footer>
-      © <span id="year"></span> Your Startup Name • Built by Shajan Alam
-    </footer>
+    <details>
+      <summary>Tools</summary>
+      <p class="muted">Click a tool to open it:</p>
+      <ul>
+        <li><a href="https://example.com" target="_blank" rel="noopener">Tool 1 (replace link)</a></li>
+        <li><a href="https://example.com" target="_blank" rel="noopener">Tool 2 (replace link)</a></li>
+        <li><a href="https://example.com" target="_blank" rel="noopener">Tool 3 (replace link)</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Roadmaps</summary>
+      <p class="muted">Click a roadmap to open it:</p>
+      <ul>
+        <li><a href="https://example.com" target="_blank" rel="noopener">Roadmap 1 (replace link)</a></li>
+        <li><a href="https://example.com" target="_blank" rel="noopener">Roadmap 2 (replace link)</a></li>
+        <li><a href="https://example.com" target="_blank" rel="noopener">Roadmap 3 (replace link)</a></li>
+      </ul>
+    </details>
   </main>
+
+  <footer>
+    © <span id="year"></span> SNTECH
+  </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
