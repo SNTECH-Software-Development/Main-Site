@@ -19,16 +19,18 @@
       align-items: center;
     }
 
-    .auth-buttons button {
-      margin-left: 8px;
-      padding: 6px 12px;
+    .auth-buttons button,
+    .feature-buttons button {
+      margin: 6px 6px 6px 0;
+      padding: 8px 14px;
       cursor: pointer;
       border: 1px solid #ccc;
       background: #f5f5f5;
       border-radius: 4px;
     }
 
-    .auth-buttons button:hover {
+    .auth-buttons button:hover,
+    .feature-buttons button:hover {
       background: #eaeaea;
     }
 
@@ -64,6 +66,10 @@
       font-size: 0.9rem;
       color: #555;
     }
+
+    .feature-section {
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
@@ -85,6 +91,29 @@
 
   <p><strong>Who it’s for:</strong> Everyone.</p>
   <p><strong>Status:</strong> Still under development.</p>
+
+  <!-- PLATFORM FEATURES -->
+  <div class="feature-section">
+    <h3>Platform Features</h3>
+
+    <div class="feature-buttons">
+      <button onclick="alert('Connect with certified working professionals — coming soon')">
+        Connect with Members
+      </button>
+
+      <button onclick="alert('Study alone mode coming soon')">
+        Study Alone
+      </button>
+
+      <button onclick="alert('Group study mode coming soon')">
+        Study in Group
+      </button>
+
+      <button onclick="alert('Lecture tools coming soon')">
+        Tools During Lecture
+      </button>
+    </div>
+  </div>
 
   <!-- TOOLS -->
   <details>
