@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SNTECH</title>
-  <meta name="description" content="SNTECH is an ed-tech startup building learning tools and roadmaps." />
+  <meta name="description" content="SNTECH is an ed-tech startup building learning tools." />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,62 +12,103 @@
       line-height: 1.6;
       max-width: 900px;
     }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .auth-buttons button {
+      margin-left: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      border-radius: 4px;
+    }
+
+    .auth-buttons button:hover {
+      background: #eaeaea;
+    }
+
     h1 { margin-bottom: 6px; }
+
     .muted { color: #555; }
+
     details {
-      margin-top: 14px;
+      margin-top: 12px;
       padding: 10px;
       border: 1px solid #ddd;
-      border-radius: 8px;
+      border-radius: 6px;
     }
+
     summary {
       cursor: pointer;
       font-weight: bold;
     }
-    ul { margin: 10px 0 0 18px; }
-    a { color: #0b57d0; }
+
+    ul { margin: 8px 0 0 18px; }
+
+    a {
+      color: #0b57d0;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
     footer {
-      margin-top: 28px;
+      margin-top: 30px;
       font-size: 0.9rem;
       color: #555;
     }
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
     <h1>SNTECH</h1>
-    <p class="muted">Ed-tech startup</p>
-  </header>
+    <div class="auth-buttons">
+      <button onclick="alert('Sign In coming soon')">Sign In</button>
+      <button onclick="alert('Sign Up coming soon')">Sign Up</button>
+    </div>
+  </div>
 
-  <main>
-    <p>
-      SNTECH is building learning tools to help people improve their skills.
-    </p>
+  <p class="muted">Ed-tech startup</p>
 
-    <p><strong>Who it’s for:</strong> Everyone.</p>
+  <p>
+    SNTECH builds educational technology tools to help people learn technical subjects in a structured and intuitive way.
+  </p>
 
-    <p><strong>Status:</strong> We’re still working on it — more features and tools are coming soon.</p>
+  <p><strong>Who it’s for:</strong> Everyone.</p>
+
+  <p><strong>Status:</strong> Still under development. More subjects and tools coming soon.</p>
+
+  <!-- TOOLS SECTION -->
+  <details open>
+    <summary>Tools</summary>
 
     <details>
-      <summary>Tools</summary>
-      <p class="muted">Click a tool to open it:</p>
+      <summary>Computer Science</summary>
       <ul>
-        <li><a href="https://example.com" target="_blank" rel="noopener">Tool 1 (replace link)</a></li>
-        <li><a href="https://example.com" target="_blank" rel="noopener">Tool 2 (replace link)</a></li>
-        <li><a href="https://example.com" target="_blank" rel="noopener">Tool 3 (replace link)</a></li>
+        <li><a href="https://intuitivecs.ca" target="_blank">IntuitiveCS</a></li>
+        <li><a href="https://mulaxn.github.io/IntuitiveRobotics/" target="_blank">IntuitiveRobotics</a></li>
+        <li><a href="https://github.com/mulaxn/interactiveCoding" target="_blank">InteractiveCoding (GitHub)</a></li>
       </ul>
     </details>
 
     <details>
-      <summary>Roadmaps</summary>
-      <p class="muted">Click a roadmap to open it:</p>
-      <ul>
-        <li><a href="https://example.com" target="_blank" rel="noopener">Roadmap 1 (replace link)</a></li>
-        <li><a href="https://example.com" target="_blank" rel="noopener">Roadmap 2 (replace link)</a></li>
-        <li><a href="https://example.com" target="_blank" rel="noopener">Roadmap 3 (replace link)</a></li>
-      </ul>
+      <summary>Mathematics</summary>
+      <p class="muted">Coming soon.</p>
     </details>
-  </main>
+
+    <details>
+      <summary>Physics</summary>
+      <p class="muted">Coming soon.</p>
+    </details>
+
+  </details>
 
   <footer>
     © <span id="year"></span> SNTECH
@@ -76,5 +117,6 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
